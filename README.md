@@ -1,3 +1,6 @@
+
+
+
 # 🚀 Salesforce CSV Data Import Wizard (LWC)
 
 A dynamic **Data Import Tool built using Lightning Web Components (LWC) and Apex** that allows users to upload CSV files, map fields, and insert records into any Salesforce object — similar to a mini Data Loader.
@@ -28,9 +31,7 @@ A dynamic **Data Import Tool built using Lightning Web Components (LWC) and Apex
 
 <!-- Add video link here -->
 
-<video width="100%" controls>
-  <source src="./Demo/DataLoader.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/a0916046-6ab1-42f5-b6f3-5181befa0415
 
 
 ## ⚙️ How It Works
