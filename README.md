@@ -1,18 +1,79 @@
-# Salesforce DX Project: Next Steps
+# 🚀 Salesforce CSV Data Import Wizard (LWC)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A dynamic **Data Import Tool built using Lightning Web Components (LWC) and Apex** that allows users to upload CSV files, map fields, and insert records into any Salesforce object — similar to a mini Data Loader.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 📌 Features
 
-## Configure Your Salesforce DX Project
+- 📁 Upload CSV file
+- 🔍 Automatically read CSV headers and data
+- 🧠 Dynamic object selection (only creatable objects)
+- 🔗 Field mapping (CSV → Salesforce fields)
+- ⚡ Dynamic record insertion using Apex
+- 🧾 Supports multiple records (bulk insert)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+---
 
-## Read All About It
+## 🏗️ Tech Stack
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- **Frontend:** Lightning Web Components (LWC)
+- **Backend:** Apex
+- **Platform:** Salesforce
+
+
+---
+
+## 🎥 Demo (Optional)
+
+<!-- Add video link here -->
+
+<video width="100%" controls>
+  <source src="./Demo/DataLoader.mp4" type="video/mp4">
+</video>
+---
+
+## ⚙️ How It Works
+
+1. Upload a CSV file  
+2. CSV is parsed into rows and columns  
+3. Select a Salesforce Object  
+4. Map CSV columns to Salesforce fields  
+5. Click **Import Data**  
+6. Records are inserted dynamically using Apex  
+
+---
+
+## 🧠 Key Concepts Used
+
+- Dynamic Apex (`Schema.getGlobalDescribe()`)
+- `ContentVersion` for file handling
+- `List<Map<String, Object>>` for flexible data handling
+- LWC → Apex communication
+- SLDS for UI styling
+
+---
+
+## 🚧 Limitations
+
+- Basic CSV parsing (does not support quoted commas yet)
+- No field type validation (Date, Number, etc.)
+- No row-level error display
+
+---
+
+## 🔮 Future Improvements
+
+- ✅ CSV preview table
+- ✅ Auto field mapping
+- ✅ Data validation (required fields, types)
+- ✅ Row-level error reporting
+- ✅ Better CSV parsing
+
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohdwajahat/Data-Loader.git
