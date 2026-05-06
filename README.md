@@ -24,14 +24,14 @@ A dynamic **Data Import Tool built using Lightning Web Components (LWC) and Apex
 
 ---
 
-## 🎥 Demo (Optional)
+## 🎥 Demo
 
 <!-- Add video link here -->
 
 <video width="100%" controls>
   <source src="./Demo/DataLoader.mp4" type="video/mp4">
 </video>
----
+
 
 ## ⚙️ How It Works
 
